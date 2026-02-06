@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For u, my Valentine 🤍</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(180deg, #ffd6e8, #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #b30059;
+    }
+
+    .rose {
+      font-size: 80px;
+      cursor: pointer;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .letter {
+      display: none;
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 15px;
+      max-height: 60vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .tap {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>For u, my Valentine 🤍</h1>
+
+    <div class="rose" onclick="openLetter()">🌹</div>
+    <div class="tap">Tap the rose</div>
+
+    <div class="letter" id="letter">
+      <p><strong>My love,</strong></p>
+
+      <p>
+        Tumhe pata hai? Kabhi-kabhi main sochti hoon ki agar meri zindagi ek kahaani hoti,
+        toh uska sabse khoobsurat chapter tum hote.
+        Tumhari entry ke baad sab kuch thoda sa zyada rangin,
+        thoda sa zyada safe, aur bohot zyada pyaara ho gaya.
+      </p>
+
+      <p>
+        Tum mere liye sirf boyfriend nahi ho.
+        Tum meri sukoon wali jagah ho.
+        Jab duniya thakaa deti hai na,
+        tab tumhari awaaz, tumhari baatein,
+        bas tumhara hona hi kaafi hota hai.
+      </p>
+
+      <p>
+        Main perfect nahi hoon — main zyada feel karti hoon,
+        zyada sochti hoon, kabhi-kabhi zyada attached ho jaati hoon.
+        Par tumne mujhe kabhi kam ya zyada nahi mehsoos karwaya.
+      </p>
+
+      <p>
+        Tumhare saath future sochna mujhe darata nahi,
+        balki shaant karta hai.
+        Simple si cheezein — tumhare saath hassna,
+        late-night baatein, bina wajah ka pyaar,
+        aur ek dusre ka haath pakad ke chalna —
+        bas yehi chahiye mujhe.
+      </p>
+
+      <p>
+        Agar kabhi main zyada emotional ho jaun,
+        ya zyada possessive lagun,
+        toh bas itna yaad rakhna…
+        main sirf tumse bohot pyaar karti hoon.
+      </p>
+
+      <p>
+        Main tumhara saath chahti hoon —
+        har achhe din mein,
+        har bure din mein,
+        bina kisi shart ke.
+      </p>
+
+      <p><strong>
+        Tum mere ho.<br>
+        Aur main hamesha tumhari rahungi. 🤍
+      </strong></p>
+    </div>
+  </div>
+
+  <audio id="music" src="music.mp3"></audio>
+
+  <script>
+    function openLetter() {
+      document.getElementById("letter").style.display = "block";
+      document.getElementById("music").play();
+    }
+  </script>
+</body>
+</html>
